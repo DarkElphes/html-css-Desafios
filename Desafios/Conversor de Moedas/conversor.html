@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor</title>
+</head>
+<body>
+    <div><h1 class="Page-Title">Conversor de Moedas</h1>
+    <img class="Money" src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Convers%C3%A3o+1.png" alt="Money"></div>
+    <div>
+        <input type="number" name="txt1" id="txt1">
+        <input type="number" name="txt2" id="txt2">
+        <input type="button" value="converter" onclick="converter()">
+        <div id="result">Resultado</div>
+        <script>
+            function converter(){
+                var tn1 = window.document.getElementById('txt1')
+                var tn2 = window.document.getElementById('txt2')
+                var res = window.document.getElementById('result')
+                var n1 = Number(tn1.value)
+                var n2 = Number (tn2.value)
+                var s = n1 + n2
+                result.innerHTML = `A soma dos valores é igual a ${s}`
+
+
+            }
+        </script>
+    </div>
+    <code>
+        
+    </code>
+</body>
+</html>
